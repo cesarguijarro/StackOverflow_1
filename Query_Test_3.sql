@@ -15,7 +15,12 @@ where E.id = D.contact_id_b and D.relationship_type_id = 5 and D.contact_id_a = 
 SELECT COUNT(*)
 FROM civicrm_case C, civicrm_relationship B
 where c.status_id = 1 and b.case_id = c.id and B.contact_id_a = Contact.id 
-) as TotalOnGoingCases
+) as TotalOnGoingCases,
+(
+SELECT COUNT(*)
+FROM civicrm_case C, civicrm_relationship B
+where b.case_id = c.id and B.contact_id_a = Contact.id 
+) as TotalCases
 from 
 civicrm_contact as Contact
 where  Contact.contact_type = 'Individual'
