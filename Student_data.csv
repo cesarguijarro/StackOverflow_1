@@ -1,0 +1,12 @@
+MContactId,MTextFied,SingleSelection, MRadio,CheckBox, MMultiselect, Autocomplet
+207,"207 - correct row ",1,1,A1,1,1
+207,"207 - correct row with multiple value in MultiSelect field",1,1,"A1,A2","1,2",1
+207,"207 - correct row with mupliple value in autocomplete field",2,2,A2,2,"2,3"
+207,"207 - incorrect row with mupliple value in autocomplete field with one invalid value",2,2,A2,2,"2,3,99"
+207,"207 - incorrect row in checkbox field with one invalid value",2,2,99,2,2
+208,"208 - correct row with multiple values in autocomplete field but not valid for the type of record - parent contact",1,1,A1,1,"1,2,3"
+209,"209 - correct row ",1,1,A1,1,1
+209,,2,2,A2,2,2            
+209,"209 - incorrect row mandatory field empty ",2,,A2,2,2  
+
+
